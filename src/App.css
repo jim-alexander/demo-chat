@@ -1,33 +1,138 @@
 .App {
   text-align: center;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  padding: 20px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#uid {
+  text-align: left;
+  margin-top: 10px;
+  background: #f5f5f5;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  color: #b4b4b4;
+  font-size: 12px
+}
+
+#chatAction {
+  margin-top: 10px;
+  width: 100%;
+border-top: 2px solid;
+padding-top: 10px;
+ display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 6fr .5fr 1fr;
+}
+
+#msgInput {
+  border: none;
+  padding: 10px 15px;
+  border-right: none;
+  border: 1px solid black;
+
+}
+
+#sendBtn {
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+
+}
+#attachment {
+  display: flex;
+  /* background: #fff; */
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  /* border: 1px solid black grey; */
+
+}
+
+#sendBtn:hover {
+  background: #000;
+  color: #fff
+}
+
+#sendBtn:active {
+  background: darkgrey;
+  color: grey
+}
+
+#msgsContainer {
+  background: #fbfbfb;
+  /* border: 1px solid black  grey; */
+  padding: 5px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: auto
 }
 
-.App-link {
-  color: #61dafb;
+#msgsContainer::-webkit-scrollbar {
+  width: 10px;
+  background: #bdc3c7
+}
+#msgsContainer::-webkit-scrollbar-track-piece  {
+  background-color: #ecf0f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#msgsContainer::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: #bdc3c7;
+}
+
+.message {
+  margin: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.me {
+  align-items: flex-end;
+  background: #d8e8ea;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  /* border-radius: 5px; */
+  float: right
+}
+
+.you {
+  align-items: flex-start;
+  background: #f2f2f2;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  /* border-radius: 5px; */
+}
+.youUid{
+  align-items: flex-start;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 12px;
+  margin: 5px 10px;
+  color: gray;
 }
