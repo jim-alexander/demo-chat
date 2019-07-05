@@ -1,0 +1,21 @@
+/* #peopleContainer {
+  text-align: right;
+} */
+
+.user {
+  /* border-radius: 50%; */
+  border-right: 3px solid;
+  height: 40px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 13px;
+}
+#peopleTitle {
+  font-weight: bold;
+  margin: 10px 0;
+  color: grey;
+}

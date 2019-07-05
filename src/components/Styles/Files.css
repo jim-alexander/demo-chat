@@ -1,0 +1,27 @@
+#filesContainer {
+  overflow: auto;
+}
+.file {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fbfbfb;
+  font-size: 15px;
+  border: 1px solid #f2f2f2;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.file:hover {
+  background: #f1f1f1;
+}
+.file:active {
+  border: 1px solid;
+}
+
+#filesTitle {
+  font-weight: bold;
+  margin: 10px 0;
+  color: grey;
+}

@@ -1,0 +1,61 @@
+#uid {
+  text-align: left;
+  margin-top: 10px;
+  background: #f5f5f5;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  color: #b4b4b4;
+  font-size: 12px;
+}
+
+#chatAction {
+  margin-top: 10px;
+  width: 100%;
+  border-top: 2px solid #34495e;
+  padding-top: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 6fr 0.5fr 1fr;
+}
+
+#msgInput {
+  border: none;
+  padding: 10px 15px;
+  border-right: none;
+  border: 1px solid #34495e;
+}
+
+#sendBtn {
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #34495e;
+}
+
+#attachment {
+  display: flex;
+  /* background: #fff; */
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  /* border: 1px solid black grey; */
+}
+
+#sendBtn:hover {
+  background: #34495e;
+  color: #fff;
+}
+
+#sendBtn:active {
+  background: darkgrey;
+  color: grey;
+}

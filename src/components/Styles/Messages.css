@@ -1,0 +1,48 @@
+#msgsContainer {
+  background: #fbfbfb;
+  border: 1px solid #f2f2f2;
+
+  /* border: 1px solid black  grey; */
+  padding: 5px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.message {
+  margin: 5px;
+  display: inline-block;
+  position: relative;
+  word-break: break-word;
+  text-align: left;
+}
+
+.me {
+  align-items: flex-end;
+  background: #d8e8ea;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  /* border-radius: 5px; */
+  float: right;
+  max-width: 370px;
+}
+
+.you {
+  align-items: flex-start;
+  background: #f2f2f2;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 5px 10px;
+  max-width: 370px;
+  /* border-radius: 5px; */
+}
+.youUid {
+  align-items: flex-start;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 12px;
+  margin: 5px 10px;
+  color: gray;
+}
